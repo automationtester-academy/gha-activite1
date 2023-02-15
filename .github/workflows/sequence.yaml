@@ -20,7 +20,7 @@ jobs:
     needs: BUILD
     steps:
       - run: echo "TEST_API"
-  DEPLOY
+  DEPLOY:
     runs-on: ubuntu-latest
     needs: [TEST_APP, TEST_API]
     steps:
