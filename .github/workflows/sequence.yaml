@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: BUILD
     steps:
-      - run: echo "TEST_API"
+      - run: exit 1
       
   DEPLOY:
     runs-on: ubuntu-latest
